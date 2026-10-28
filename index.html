@@ -1,1 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobHub | Find Your Next Job</title>
+  <link rel="stylesheet" href="stlye.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon"><i class="fas fa-briefcase"></i></span>
+      JobHub
+    </a>
+
+    <nav class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#jobs">Find Jobs</a>
+      <a href="#companies">Companies</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-buttons">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="register">Register</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">
+        <i class="fas fa-search"></i>
+        Find Your Next Opportunity
+      </div>
+
+      <h1>Your <span>Next Job</span><br>Is Closer Than You Think</h1>
+
+      <p class="hero-description">
+        Discover amazing job opportunities, connect with top companies,
+        and take the next step in your career.
+      </p>
+
+      <form class="search-bar" id="jobSearch">
+        <div class="search-input">
+          <i class="fas fa-search"></i>
+          <input type="text" id="keyword" placeholder="Job title, keyword or company">
+        </div>
+
+        <div class="location-input">
+          <i class="fas fa-map-marker-alt"></i>
+          <select id="location">
+            <option value="">Location</option>
+            <option>Lagos, Nigeria</option>
+            <option>Abuja, Nigeria</option>
+            <option>Port Harcourt, Nigeria</option>
+            <option>Remote</option>
+          </select>
+        </div>
+
+        <button type="submit">Search Jobs</button>
+      </form>
+
+      <div class="popular-searches">
+        <span>Popular searches:</span>
+        <a href="#jobs">Frontend Developer</a>
+        <a href="#jobs">Backend Developer</a>
+        <a href="#jobs">UI/UX Designer</a>
+        <a href="#jobs">Remote Jobs</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="blue-shape"></div>
+
+      <div class="floating-card career-card">
+        <span class="floating-icon blue"><i class="fas fa-briefcase"></i></span>
+        <div>
+          <strong>Build Your Career</strong>
+          <p>Get hired by top companies<br>and grow your skills.</p>
+        </div>
+      </div>
+
+      <div class="person-image">
+        <img
+          src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=750&q=85"
+          alt="Professional woman holding a tablet"
+        >
+      </div>
+
+      <div class="floating-card companies-card">
+        <span class="floating-icon green"><i class="fas fa-users"></i></span>
+        <div>
+          <strong>Top Companies</strong>
+          <p>Work with trusted<br>and reputable brands.</p>
+        </div>
+      </div>
+
+      <div class="handwritten">Better<br>Opportunities<br>Ahead</div>
+    </div>
+  </section>
+
+  <!-- Featured Jobs -->
+  <section class="featured-section" id="jobs">
+    <div class="section-heading">
+      <div>
+        <h2>Featured Jobs</h2>
+        <p>Handpicked opportunities from top companies</p>
+      </div>
+      <a href="#jobs" class="view-all">View All Jobs <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="jobs-grid" id="jobsGrid">
+
+      <article class="job-card" data-title="frontend developer" data-location="lagos remote">
+        <div class="company">
+          <span class="company-icon blue"><i class="fas fa-code"></i></span>
+          <span>TechVision</span>
+        </div>
+        <h3>Frontend Developer</h3>
+        <p class="job-location"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria <span>•</span> Remote</p>
+        <span class="job-type full-time">Full-time</span>
+        <div class="job-bottom">
+          <strong>₦300,000 – ₦500,000 / month</strong>
+          <button class="apply-arrow" aria-label="View Frontend Developer job"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </article>
+
+      <article class="job-card" data-title="backend developer" data-location="abuja remote">
+        <div class="company">
+          <span class="company-icon purple"><i class="fas fa-chart-column"></i></span>
+          <span>GrowthPlus</span>
+        </div>
+        <h3>Backend Developer</h3>
+        <p class="job-location"><i class="fas fa-map-marker-alt"></i> Abuja, Nigeria <span>•</span> Remote</p>
+        <span class="job-type full-time">Full-time</span>
+        <div class="job-bottom">
+          <strong>₦400,000 – ₦700,000 / month</strong>
+          <button class="apply-arrow" aria-label="View Backend Developer job"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </article>
+
+      <article class="job-card" data-title="ui ux designer designer" data-location="port harcourt remote">
+        <div class="company">
+          <span class="company-icon pink"><i class="fas fa-feather-pointed"></i></span>
+          <span>CreativeLabs</span>
+        </div>
+        <h3>UI/UX Designer</h3>
+        <p class="job-location"><i class="fas fa-map-marker-alt"></i> Port Harcourt, Nigeria <span>•</span> Remote</p>
+        <span class="job-type contract">Contract</span>
+        <div class="job-bottom">
+          <strong>₦200,000 – ₦400,000 / month</strong>
+          <button class="apply-arrow" aria-label="View UI/UX Designer job"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </article>
+
+      <article class="job-card" data-title="digital marketing specialist" data-location="lagos hybrid">
+        <div class="company">
+          <span class="company-icon green"><i class="fas fa-bullhorn"></i></span>
+          <span>BrightMedia</span>
+        </div>
+        <h3>Digital Marketing Specialist</h3>
+        <p class="job-location"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria <span>•</span> Hybrid</p>
+        <span class="job-type full-time">Full-time</span>
+        <div class="job-bottom">
+          <strong>₦250,000 – ₦450,000 / month</strong>
+          <button class="apply-arrow" aria-label="View Digital Marketing job"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </article>
+
+    </div>
+    <p id="noResults" class="no-results" hidden>No matching jobs found. Try another search.</p>
+  </section>
+
+  <!-- Features -->
+  <section class="features-section" id="about">
+    <div class="feature">
+      <span class="feature-icon search-feature"><i class="fas fa-search"></i></span>
+      <h3>Easy to Search</h3>
+      <p>Filter jobs by location, category,<br>experience and more.</p>
+    </div>
+
+    <div class="feature" id="companies">
+      <span class="feature-icon trust-feature"><i class="fas fa-shield-halved"></i></span>
+      <h3>Trusted Companies</h3>
+      <p>Work with verified and<br>reputable employers.</p>
+    </div>
+
+    <div class="feature">
+      <span class="feature-icon skills-feature"><i class="fas fa-arrow-trend-up"></i></span>
+      <h3>Grow Your Skills</h3>
+      <p>Access resources and tips<br>to boost your career.</p>
+    </div>
+
+    <div class="feature">
+      <span class="feature-icon community-feature"><i class="fas fa-users"></i></span>
+      <h3>Join Our Community</h3>
+      <p>Connect with other job seekers<br>and professionals.</p>
+    </div>
+
+    <div class="newsletter" id="contact">
+      <i class="far fa-paper-plane newsletter-icon"></i>
+      <div class="newsletter-content">
+        <h3>Get Job Alerts</h3>
+        <p>Be the first to know about new<br>opportunities in your field.</p>
+        <form id="newsletterForm">
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe Now</button>
+        </form>
+        <p id="newsletterMessage" class="newsletter-message" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 JobHub. Find your next opportunity.</p>
+  </footer>
+
+  <script>
+    const searchForm = document.getElementById("jobSearch");
+    const keywordInput = document.getElementById("keyword");
+    const locationInput = document.getElementById("location");
+    const jobCards = [...document.querySelectorAll(".job-card")];
+    const noResults = document.getElementById("noResults");
+
+    function filterJobs() {
+      const keyword = keywordInput.value.trim().toLowerCase();
+      const location = locationInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      jobCards.forEach(card => {
+        const title = card.dataset.title;
+        const place = card.dataset.location;
+        const matchesKeyword = !keyword ||
+          title.includes(keyword) ||
+          card.textContent.toLowerCase().includes(keyword);
+        const matchesLocation = !location ||
+          place.includes(location) ||
+          (location === "remote" && place.includes("remote"));
+
+        const visible = matchesKeyword && matchesLocation;
+        card.hidden = !visible;
+        if (visible) visibleCount++;
+      });
+
+      noResults.hidden = visibleCount !== 0;
+      document.getElementById("jobs").scrollIntoView({ behavior: "smooth" });
+    }
+
+    searchForm.addEventListener("submit", event => {
+      event.preventDefault();
+      filterJobs();
+    });
+
+    document.querySelectorAll(".popular-searches a").forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        keywordInput.value = link.textContent.trim();
+        locationInput.value = "";
+        filterJobs();
+      });
+    });
+
+    document.querySelectorAll(".apply-arrow").forEach(button => {
+      button.addEventListener("click", () => {
+        const card = button.closest(".job-card");
+        alert("You selected: " + card.querySelector("h3").textContent +
+          "\\nConnect this button to a job details or application page.");
+      });
+    });
+
+    document.getElementById("newsletterForm").addEventListener("submit", event => {
+      event.preventDefault();
+      document.getElementById("newsletterMessage").textContent =
+        "Thanks for your interest! Connect a backend to save your subscription.";
+    });
+  </script>
+</body>
+</html>
